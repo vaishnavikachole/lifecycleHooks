@@ -1,0 +1,7 @@
+<div class="card" style="width: 400px;height:450px;background-color:bisque;padding:20px;margin:20px;">
+    <h5 style="text-align: center;">About Us</h5><br>
+    <input type="text" placeholder="input here..." #val>
+    <button class="btn btn-danger btn-sm" style="width: 100px;" (click)="submitValue(val)">send Data to comp1</button><br>
+    <app-comp1 *ngIf="comp1Exist" [myValue]="value">ng-content: {{value}}</app-comp1>
+    <button class="btn btn-success btn-sm" style="width: 100px;" (click)="destroyComponent()">Destroy Component</button>
+</div>
